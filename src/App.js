@@ -30,6 +30,11 @@ const ProtectedRoute = ({ children }) => {
 };
 
 function App() {
+
+  const backgroundStyle = {
+    minHeight: '100vh',
+    background: 'linear-gradient(to bottom right, #f5fff2, #e1f7e7)',
+  };
   
   useEffect(() => {
     initOneSignal(); //uruchamiamy OneSignal przy załadowaniu aplikacji
@@ -37,7 +42,7 @@ function App() {
 
   return (
     <Router>
-      <div className="d-flex flex-column min-vh-100">
+      <div style={backgroundStyle} className="d-flex flex-column min-vh-100">
         <Navbar />
         <main className="flex-grow-1 container mt-4">
           <Routes>
