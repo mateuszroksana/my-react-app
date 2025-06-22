@@ -10,7 +10,7 @@ export async function initOneSignal() {
         prompts: [
           {
             type: "push",
-            autoPrompt: true,
+            autoPrompt: false,  // wyłącz automatyczne wyświetlanie promptu
             text: {
               actionMessage: "Chcesz otrzymywać powiadomienia o nowościach?",
               acceptButton: "Tak, chcę!",
@@ -23,6 +23,4 @@ export async function initOneSignal() {
     }
   });
 
-  // Wywołaj prompt ręcznie:
-  OneSignal.showSlidedownPrompt();
 }
