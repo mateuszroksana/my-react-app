@@ -12,6 +12,8 @@ import BankTransferInstructions from './pages/BankTransferInstructions';
 import LoginPage from './pages/LoginPage';
 import OrdersPage from './pages/OrdersPage';
 import ProductsPage from './pages/ProductsPage';
+import { useEffect } from 'react';
+import { initOneSignal } from './onesignalInit';
 
 // Funkcja sprawdzająca czy użytkownik jest zalogowany
 const isAuthenticated = () => {
@@ -27,6 +29,11 @@ const ProtectedRoute = ({ children }) => {
 };
 
 function App() {
+  
+  useEffect(() => {
+    initOneSignal(); //uruchamiamy OneSignal przy załadowaniu aplikacji
+  }, []);
+
   return (
     <Router>
       <Navbar />
