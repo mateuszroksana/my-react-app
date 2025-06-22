@@ -1,0 +1,32 @@
+{
+  "name": "tea-pwa",
+  "short_name": "tea",
+  "display": "browser",
+  "description": "Roksana Balcerzak - Mateusz Borowiak",
+  "scope": "/",
+  "start_url": "/http://localhost:3000/",
+  "theme_color": "#adc39c",
+  "background_color": "#b7b3ae",
+  "icons": [
+    {
+      "src": "icons/icon-184x184.png",
+      "sizes": "184x184",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+    "teas": [
+      { "id": 1, "name": "Herbata Zielona", "price": "20 PLN", "description": "Świeża herbata zielona, bogata w antyoksydanty." },
+      { "id": 2, "name": "Herbata Czerwona", "price": "25 PLN", "description": "Herbata czerwona, idealna na wzmocnienie organizmu." },
+      { "id": 3, "name": "Herbata Czarna", "price": "18 PLN", "description": "Klasyczna czarna herbata, doskonała do porannego wypicia." },
+      { "id": 4, "name": "Herbata Biała", "price": "30 PLN", "description": "Delikatna herbata biała, idealna na każdą porę dnia." },
+      { "id": 5, "name": "Herbata Earl Grey", "price": "28 PLN", "description": "Herbata czarna z dodatkiem bergamotki." },
+      { "id": 6, "name": "Herbata Jaśminowa", "price": "22 PLN", "description": "Zielona herbata z dodatkiem jaśminu." },
+      { "id": 7, "name": "Herbata Miętowa", "price": "21 PLN", "description": "Orzeźwiająca herbata miętowa, doskonała na gorące dni." },
+      { "id": 8, "name": "Herbata Rooibos", "price": "26 PLN", "description": "Czerwona herbata rooibos, bogata w minerały." },
+      { "id": 9, "name": "Herbata Hibiskusowa", "price": "23 PLN", "description": "Kwiat hibiskusa, idealny na herbaty owocowe." },
+      { "id": 10, "name": "Herbata Z Imbirem", "price": "27 PLN", "description": "Herbata z korzennym imbirem, pobudzająca i rozgrzewająca." }
+    ],
+    "herbal_teas": [
+      { "id": 1, "name": "Herbata Miętowa", "price": "18 PLN", "description": "Orzeźwiająca herbata miętowa, doskonała na gorące dni." },
+      { "id": 2, "name": "Herbata Rumiankowa", "price": "15 PLN", "description": "Herbata rumiankowa, uspokajająca i kojąca." },
+      { "id": 3, "name": "Herbata Z Liści Maliny", "price": "19 PLN", "description": "Herbata z liści malin, wspomagająca układ pokarmowy." },
+      { "id": 4, "name": "Herbata Z Dziurawcem", "price": "20 PLN", "description": "Herbata z dziurawcem, pomagająca w poprawie nastroju." },
+      { "id": 5, "name": "Herbata Z Kwiatem Lipy", "price": "17 PLN", "description": "Herbata z kwiatu lipy, relaksująca i łagodząca." },
+      { "id": 6, "name": "Herbata Z Koperkiem", "price": "21 PLN", "description": "Herbata koperkowa, wspomagająca trawienie." },
+      { "id": 7, "name": "Herbata Z Kwiatem Lawendy", "price": "24 PLN", "description": "Herbata z lawendą, idealna na relaksujący wieczór." },
+      { "id": 8, "name": "Herbata Z Pokrzywą", "price": "22 PLN", "description": "Herbata z pokrzywą, wspomagająca oczyszczanie organizmu." },
+      { "id": 9, "name": "Herbata Z Melisą", "price": "20 PLN", "description": "Herbata z melisą, pomocna w redukcji stresu." },
+      { "id": 10, "name": "Herbata Z Imbirem i Kurkumą", "price": "26 PLN", "description": "Herbata z imbirem i kurkumą, doskonała na zimowe dni." }
+    ]
+  }
+  
