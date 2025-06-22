@@ -14,6 +14,7 @@ import OrdersPage from './pages/OrdersPage';
 import ProductsPage from './pages/ProductsPage';
 import { useEffect } from 'react';
 import { initOneSignal } from './onesignalInit';
+import Footer from './components/Footer';
 
 // Funkcja sprawdzająca czy użytkownik jest zalogowany
 const isAuthenticated = () => {
@@ -64,6 +65,7 @@ function App() {
           } />
         </Routes>
       </div>
+    <Footer />
     </Router>
   );
 }
