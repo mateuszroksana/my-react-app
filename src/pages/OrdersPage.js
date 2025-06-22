@@ -11,7 +11,7 @@ const OrdersPage = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('${process.env.REACT_APP_API_URL}/api/orders');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders`);
       setOrders(response.data);
       setLoading(false);
     } catch (error) {

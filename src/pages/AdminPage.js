@@ -85,7 +85,7 @@ const AdminPage = () => {
             },
             body: JSON.stringify(newProduct),
           })
-        : await fetch('${process.env.REACT_APP_API_URL}/api/admin/products', {
+        : await fetch(`${process.env.REACT_APP_API_URL}/api/admin/products`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

@@ -15,7 +15,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('${process.env.REACT_APP_API_URL}/api/login', formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/login`, formData);
 
       if (response.status === 200) {
         // Zapisz sesję w LocalStorage lub ciasteczku

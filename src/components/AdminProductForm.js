@@ -18,8 +18,8 @@ const AdminProductForm = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/teas');  // Pobieramy herbaty
-      const herbalResponse = await fetch('http://localhost:5000/api/herbal-teas');  // Pobieramy herbaty ziołowe
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/teas`);
+      const herbalResponse = await fetch(`${process.env.REACT_APP_API_URL}/api/herbal-teas`);
 
       const teas = await response.json();
       const herbalTeas = await herbalResponse.json();
@@ -44,13 +44,13 @@ const AdminProductForm = () => {
     try {
       let response;
       if (isEditing) {
-        response = await fetch(`http://localhost:5000/api/admin/products/${productId}`, {
+        response = await fetch(`${process.env.REACT_APP_API_URL}/api/admin/products/${productId}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(newProduct),
         });
       } else {
-        response = await fetch('http://localhost:5000/api/admin/products', {
+        response = await fetch(`${process.env.REACT_APP_API_URL}/api/admin/products`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(newProduct),
