@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import NotificationButton from './NotificationButton';
+
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -48,6 +50,9 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/cart">Koszyk</Link>
+                </li>
+                <li className="nav-item">
+                  <NotificationButton />
                 </li>
                 {isLoggedIn ? (
                   <>
