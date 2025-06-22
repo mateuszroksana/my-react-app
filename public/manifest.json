@@ -1,10 +1,10 @@
 {
   "name": "tea-pwa",
   "short_name": "tea",
-  "display": "browser",
+  "display": "standalone",
   "description": "Roksana Balcerzak - Mateusz Borowiak",
   "scope": "/",
-  "start_url": "/http://localhost:3000/",
+  "start_url": "/",
   "theme_color": "#adc39c",
   "background_color": "#b7b3ae",
   "icons": [
