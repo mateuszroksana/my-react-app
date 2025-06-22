@@ -91,7 +91,7 @@ const AdminProductForm = () => {
   const handleDelete = async (id, category) => {
     if (window.confirm('Czy na pewno chcesz usunąć ten produkt?')) {
       try {
-        const response = await fetch(`http://localhost:5000/api/admin/products/${id}`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/admin/products/${id}`, {
           method: 'DELETE',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ category }),

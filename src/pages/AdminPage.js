@@ -20,7 +20,7 @@ const AdminPage = () => {
   const fetchProducts = async () => {
     try {
       // Pobieranie produktów herbat
-      const teaResponse = await fetch('http://localhost:5000/api/teas');
+      const teaResponse = await fetch('${process.env.REACT_APP_API_URL}/api/teas');
       const teaData = await teaResponse.json();
       if (teaResponse.ok) {
         setProducts((prevProducts) => {
@@ -33,7 +33,7 @@ const AdminPage = () => {
       }
 
       // Pobieranie produktów herbat ziołowych
-      const herbalTeaResponse = await fetch('http://localhost:5000/api/herbal-teas');
+      const herbalTeaResponse = await fetch('${process.env.REACT_APP_API_URL}/api/herbal-teas');
       const herbalTeaData = await herbalTeaResponse.json();
       if (herbalTeaResponse.ok) {
         setProducts((prevProducts) => {
@@ -78,14 +78,14 @@ const AdminPage = () => {
 
     try {
       const response = isEditing
-        ? await fetch(`http://localhost:5000/api/admin/products/${productId}`, {
+        ? await fetch(`${process.env.REACT_APP_API_URL}/api/admin/products/${productId}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify(newProduct),
           })
-        : await fetch('http://localhost:5000/api/admin/products', {
+        : await fetch('${process.env.REACT_APP_API_URL}/api/admin/products', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -128,7 +128,7 @@ const AdminPage = () => {
 
     if (confirmed) {
       try {
-        const response = await fetch(`http://localhost:5000/api/admin/products/${id}`, {
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/admin/products/${id}`, {
           method: 'DELETE',
         });
 

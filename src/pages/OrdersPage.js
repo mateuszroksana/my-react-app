@@ -11,7 +11,7 @@ const OrdersPage = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/orders');
+      const response = await axios.get('${process.env.REACT_APP_API_URL}/api/orders');
       setOrders(response.data);
       setLoading(false);
     } catch (error) {
@@ -23,7 +23,7 @@ const OrdersPage = () => {
   // Funkcja do oznaczania zamówienia jako zrealizowane
   const handleCompleteOrder = async (orderId) => {
     try {
-      await axios.put(`http://localhost:5000/api/orders/${orderId}/complete`);
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/orders/${orderId}/complete`);
       fetchOrders();  // Odśwież listę zamówień po aktualizacji
     } catch (error) {
       console.error('Błąd podczas aktualizacji zamówienia:', error);

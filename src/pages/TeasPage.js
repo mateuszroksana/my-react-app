@@ -10,7 +10,7 @@ const TeasPage = () => {
   useEffect(() => {
     const fetchTeas = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/teas');  // Pobieramy dane z backendu
+        const response = await fetch('${process.env.REACT_APP_API_URL}/api/teas');  // Pobieramy dane z backendu
         const data = await response.json();
 
         console.log('Otrzymane dane:', data);  // Logowanie danych przed ustawieniem stanu

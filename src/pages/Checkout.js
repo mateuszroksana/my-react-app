@@ -43,7 +43,7 @@ const Checkout = () => {
     };
 
     try {
-      await axios.post('http://localhost:5000/api/orders', orderData);
+      await axios.post('${process.env.REACT_APP_API_URL}/api/orders', orderData);
       alert('Zamówienie zostało złożone!');
       clearCart();
 
